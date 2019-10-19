@@ -5,11 +5,17 @@
     <title>WEB 프로그래밍</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="color.js"></script> <!--파일로 세분화-->
 </head>
 <!--본문에 대한 설명을 하는 태그-->
 
 <body>
     <h1><a href="index.html">WEB</a></h1>
+    <div id="button">
+            <input type="button" value="night" onclick="
+                nightDayHandler(this);">
+        </div>
     <div id="grid">
         <ol>
             <li><a href="1.html">HTML</a></li>
@@ -19,7 +25,7 @@
         <!--ordered list ul : unordered list-->
         <div id="article">
             <h2>CSS</h2>
-            <img src="./CSS3_logo_and_wordmark.svg.png" width="7%" style="margin-left: 17px;">
+            <img src="./CSS3_logo_and_wordmark.svg.png" width="7%" style="margin-left: 17px;" id="imgId2">
             <p>
                 HTML 등의 마크업 언어로 작성된 문서가 실제로 웹사이트에 표현되는 방법을 정해주는 언어.<br>
                 CSS의 C가 Cascading의 약자인데,<br>

@@ -10,6 +10,32 @@
 
 <body>
     <h1><a href="index.html">WEB</a></h1>
+    <div id="button">
+        <input id="onoff" type="button" value="night" onclick="
+        if(document.querySelector('#onoff').value === 'night'){
+        document.querySelector('body').style.backgroundColor='black';
+        document.querySelector('body').style.color='white';
+        document.querySelector('#onoff').value = 'day';
+        var aList = document.querySelectorAll('a');
+        var i = 0;
+        while(i < aList.length){
+         aList[i].style.color = 'powderblue';
+         i = i + 1;   
+        }
+        }else{
+        document.querySelector('body').style.backgroundColor='white';
+        document.querySelector('body').style.color='black';
+        document.querySelector('#onoff').value = 'night';
+        var aList = document.querySelectorAll('a');
+        var i = 0;
+        while(i < aList.length){
+         aList[i].style.color = 'blue';
+         i = i + 1;   
+        }
+        }
+        ">
+    </div>
+
     <div id="grid">
         <ol>
             <li><a href="1.html" class="first">HTML</a></li>
@@ -22,7 +48,7 @@
             <h2>WEB</h2>
             <img src="./Download-WWW-PNG-Pic.png" width="300px">
             <p>
-                1990년에 발표된 월드 와이드 웹(World Wide Web, WWW, W3)은<br>
+                1990년에 발표된 <span>월드 와이드 웹(World Wide Web, WWW, W3)</span>은<br>
                 인터넷에 연결된 컴퓨터를 이용해 사람들과 정보를 공유할 수 있는 거미줄(Web)처럼 얼기설기 엮인 공간을 뜻하는 용어다.<br>
                 HTTP 프로토콜을 기반으로 HTML로 작성된 하이퍼텍스트 페이지를<br>
                 웹 브라우저라는 특정한 프로그램으로 읽을 수 있게 하도록 구성되어 있다.<br>
@@ -35,28 +61,28 @@
                 controls></video>
 
 
-                <div id="disqus_thread"></div>
-                <script>
+            <div id="disqus_thread"></div>
+            <script>
 
-                    /**
-                    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-                    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-                    /*
-                    var disqus_config = function () {
-                    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-                    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-                    };
-                    */
-                    (function () { // DON'T EDIT BELOW THIS LINE
-                        var d = document, s = d.createElement('script');
-                        s.src = 'https://web1-zgjyqj7fdm.disqus.com/embed.js';
-                        s.setAttribute('data-timestamp', +new Date());
-                        (d.head || d.body).appendChild(s);
-                    })();
-                </script>
-                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments
-                        powered
-                        by Disqus.</a></noscript>
+                /**
+                *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+                /*
+                var disqus_config = function () {
+                this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                };
+                */
+                (function () { // DON'T EDIT BELOW THIS LINE
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://web1-zgjyqj7fdm.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments
+                    powered
+                    by Disqus.</a></noscript>
         </div>
     </div>
 

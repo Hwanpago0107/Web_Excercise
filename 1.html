@@ -5,11 +5,17 @@
     <title>WEB 프로그래밍</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="color.js"></script>
 </head>
 <!--본문에 대한 설명을 하는 태그-->
 
 <body>
     <h1><a href="index.html">WEB</a></h1>
+    <div id="button">
+        <input class="one" type="button" value="night" onclick="
+            nightDayHandler(this);">
+    </div>
     <div id="grid">
         <ol>
             <li><a href="1.html">HTML</a></li>
@@ -19,7 +25,7 @@
         <!--ordered list ul : unordered list-->
         <div id="article">
             <h2>HTML</h2>
-            <img src="./1200px-HTML5_logo_and_wordmark.svg.png" width="10%">
+           <img src="./1200px-HTML5_logo_and_wordmark.svg.png" width="10%"></img>
             <p>"Hyper Text Mark-up Language" 의 약자.<br>
                 웹 페이지의 모습을 기술하기 위한 규약.<br>
                 프로그래밍 언어가 아니라 <strong><u>마크업</u></strong> 언어이다.</p>
