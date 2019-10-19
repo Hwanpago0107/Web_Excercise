@@ -1,50 +1,65 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>WEB 프로그래밍</title>
     <meta charset="utf-8">
-</head> <!--본문에 대한 설명을 하는 태그-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<!--본문에 대한 설명을 하는 태그-->
+
 <body>
-    <h1><a href="index.html">WEB</h1>
-<ol>
-    <li><a href="1.html">HTML</a></li>
-    <li><a href="2.html">CSS</a></li>
-    <li><a href="3.html">JavaScript</a></li>
-</ol> <!--ordered list ul : unordered list-->
+    <h1><a href="index.html">WEB</a></h1>
+    <div id="grid">
+        <ol>
+            <li><a href="1.html" class="first">HTML</a></li>
+            <li><a href="2.html" class="first" id="second">CSS</a></li>
+            <!--style 태그는 css의 속성을 부여-->
+            <li><a href="3.html" class="first" id="third">JavaScript</a></li>
+        </ol>
+        <!--ordered list ul : unordered list-->
+        <div id="article">
+            <h2>WEB</h2>
+            <img src="./Download-WWW-PNG-Pic.png" width="300px">
+            <p>
+                1990년에 발표된 월드 와이드 웹(World Wide Web, WWW, W3)은<br>
+                인터넷에 연결된 컴퓨터를 이용해 사람들과 정보를 공유할 수 있는 거미줄(Web)처럼 얼기설기 엮인 공간을 뜻하는 용어다.<br>
+                HTTP 프로토콜을 기반으로 HTML로 작성된 하이퍼텍스트 페이지를<br>
+                웹 브라우저라는 특정한 프로그램으로 읽을 수 있게 하도록 구성되어 있다.<br>
+                WWW, W3, 또는 간단하게 웹(Web)이라고도 한다.<br>
+                일반인에게 인터넷이 보급되기 시작한 1994년부터<br>
+                사실상 인터넷과 동의어 취급할 정도로 가장 널리 보급된 인터넷 시스템이다.<br>
+            </p>
+            <video width="560" height="315"
+                src="https://gcs-vimeo.akamaized.net/exp=1571388641~acl=%2A%2F1510965912.mp4%2A~hmac=71b12868700502dafb8f0d022ee1024c93aed48182acc17a634366beeabad489/vimeo-prod-skyfire-std-us/01/3237/14/366185131/1510965912.mp4"
+                controls></video>
 
-<h2>WEB</h2>
-<img src="./Download-WWW-PNG-Pic.png" width="20%">
-<p>
-1990년에 발표된 월드 와이드 웹(World Wide Web, WWW, W3)은<br>
-인터넷에 연결된 컴퓨터를 이용해 사람들과 정보를 공유할 수 있는 거미줄(Web)처럼 얼기설기 엮인 공간을 뜻하는 용어다.<br>
-HTTP 프로토콜을 기반으로 HTML로 작성된 하이퍼텍스트 페이지를<br>
-웹 브라우저라는 특정한 프로그램으로 읽을 수 있게 하도록 구성되어 있다.<br>
-WWW, W3, 또는 간단하게 웹(Web)이라고도 한다.<br>
-일반인에게 인터넷이 보급되기 시작한 1994년부터<br> 
-사실상 인터넷과 동의어 취급할 정도로 가장 널리 보급된 인터넷 시스템이다.<br>
-</p>
-<video width="560" height="315" src="https://gcs-vimeo.akamaized.net/exp=1571318222~acl=%2A%2F722779144.mp4%2A~hmac=4af900e1babeeea06323e360ba557b92fbe10e195ecb1672c98565ac1fab48a8/vimeo-prod-skyfire-std-us/01/2150/8/210752478/722779144.mp4" controls></video>
 
-<div id="disqus_thread"></div>
-<script>
+                <div id="disqus_thread"></div>
+                <script>
 
-/**
-*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-/*
-var disqus_config = function () {
-this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-};
-*/
-(function() { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
-s.src = 'https://web1-zgjyqj7fdm.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-                            
+                    /**
+                    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+                    /*
+                    var disqus_config = function () {
+                    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                    };
+                    */
+                    (function () { // DON'T EDIT BELOW THIS LINE
+                        var d = document, s = d.createElement('script');
+                        s.src = 'https://web1-zgjyqj7fdm.disqus.com/embed.js';
+                        s.setAttribute('data-timestamp', +new Date());
+                        (d.head || d.body).appendChild(s);
+                    })();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments
+                        powered
+                        by Disqus.</a></noscript>
+        </div>
+    </div>
+
 </body>
+
 </html>
